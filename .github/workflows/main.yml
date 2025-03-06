@@ -22,7 +22,7 @@ jobs:
         dotnet-version: '9.0.x' # Adjust based on your .NET version
     
     - name: Restore dependencies
-      run: dotnet restore src/logfiles.sln
+      run: dotnet restore src/Crypto.sln
 
     - name: Build solution
       run: dotnet build src/Crypto.sln --no-restore --configuration Release
